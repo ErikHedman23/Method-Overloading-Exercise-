@@ -5,9 +5,12 @@
         static void Main(string[] args)
         {
             
-            Console.WriteLine(Add(3, 4));
-            Console.WriteLine(Add(3.00m, 3.00m));
-            Console.WriteLine(Add(1, 4, true));
+            var add = (Add(3, 4));
+            Console.WriteLine(add);
+            var dec = (Add(3.00m, 3.00m));
+            Console.WriteLine(dec);
+            var dollars = (Add(1, 4, true));
+            Console.WriteLine(dollars);
         }
         public static int Add(int a, int b)
         {
